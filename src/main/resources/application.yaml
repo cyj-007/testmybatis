@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/sys?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  devtools:
+    restart:
+      enabled: true #设置开启热部署
+mybatis:
+  # xml位置
+  mapper-locations: classpath*:mapper/**/*.xml
+  configuration:
+    # 允许驼峰命名映射
+    map-underscore-to-camel-case: true
+    # 控制台打印sql语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+  port: 8181
