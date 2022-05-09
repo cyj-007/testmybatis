@@ -18,7 +18,7 @@ public class UserEntity {
     private long id;
     private String userCode;
     private String userName;
-    private String nickName;
+    private String nickName = "111";
     private String userPwd;
     private Date createDate;
     private Date updateDate;
